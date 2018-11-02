@@ -2,6 +2,6 @@
 2. list 2
 
 
-![alt text](https://shiftgamingsystems.github.io/flutt/img/linus.gif "linus")
+![linus](https://shiftgamingsystems.github.io/flutt/img/linus.gif)
 
 ** shiftgamingsystems.github.io/flutt/img/linus.gif **
