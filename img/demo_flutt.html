@@ -1,0 +1,663 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Flutterlytics - Digital Marketing and Consulting Solutions</title>
+    <meta name="description" content="Fibonad is an advertising media company, offering premium branding and performance solutions, supported by our data, analytics and optimization technology.">
+    <meta name="keywords" content="Advertising, Technology, Branding, Publishing, Performance, Apps, Mobile Games, SMS, Publisher, Advertiser, Affiliation, DSP, Network, RTB, Video, Ad Formats, Mediabuying, ASO, Content Providers, AVA, Machine Learning, Artificial Intelligence">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/main5185.css?v=0007"> -->
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="file://D://w3.css"/>
+    <!-- <link rel="alternate" hreflang="en" href="index.html"/> -->
+
+    <!-- <link rel="stylesheet" href="../use.typekit.net/vqb6igb.css"> -->
+    <style>
+        html,
+        body,
+        div,
+        span,
+        h1,
+        h2,
+        a,
+        ul,
+        li,
+        header,
+        nav,
+        section,
+        video,
+        button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: sofia-pro, sans-serif;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            color: #242e37;
+            position: relative;
+            background: url(../img/lines.png) repeat-y top/100vw;
+            background-size: 100vw auto
+        }
+        
+        @media (max-width: 900px) {
+            body {
+                background: none
+            }
+        }
+        
+        h1::-moz-selection,
+        h2::-moz-selection,
+        a::-moz-selection,
+        span::-moz-selection,
+        ul::-moz-selection,
+        li::-moz-selection {
+            color: #fff;
+            background: #039fd6
+        }
+        
+        h1::selection,
+        h2::selection,
+        a::selection,
+        span::selection,
+        ul::selection,
+        li::selection {
+            color: #fff;
+            background: #039fd6
+        }
+        
+        a {
+            text-decoration: none
+        }
+        
+        @media (max-width: 900px) {
+            .m-hidden {
+                display: none !important
+            }
+        }
+        
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            -webkit-transition: background .15s ease-out;
+            transition: background .15s ease-out
+        }
+        
+        header h1 {
+            position: absolute;
+            left: 3.75vw;
+            top: 50%;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%)
+        }
+        
+        @media (max-width: 900px) {
+            header h1 {
+                left: 45px
+            }
+        }
+        
+        @media (max-width: 736px) {
+            header h1 {
+                left: 30px
+            }
+        }
+        
+        header h1 a {
+            display: block;
+            text-indent: -9999px;
+            background: url(../img/logo.svg) no-repeat center;
+            background-size: contain;
+            width: 9.010vw;
+            height: 1.927vw;
+            -webkit-transition: 0.3s ease-out;
+            transition: 0.3s ease-out
+        }
+        
+        @media (max-width: 900px) {
+            header h1 a {
+                width: 13vw;
+                height: 5vw;
+                background-image: url(../img/logo_mobile.svg)
+            }
+        }
+        
+        @media (max-width: 736px) {
+            header h1 a {
+                width: 24vw
+            }
+        }
+        
+        header nav {
+            text-align: right;
+            padding: 2.95vw 3vw 1.45vw;
+            font-size: 14px;
+            font-family: roboto, sans-serif;
+            font-weight: 400;
+            -webkit-transition: 0.4s ease-out;
+            transition: 0.4s ease-out
+        }
+        
+        @media (max-width: 900px) {
+            header nav {
+                opacity: 0;
+                visibility: hidden;
+                font-size: 20px;
+                padding: 4.6vw 2.6vw 8.35vw
+            }
+        }
+        
+        @media (max-width: 736px) {
+            header nav {
+                padding: 10.5vw 2.6vw 8.35vw
+            }
+        }
+        
+        @media (max-width: 900px) {
+            header nav>ul {
+                position: fixed;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                z-index: 10000;
+                background: #fff;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                list-style-type: none;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1
+            }
+        }
+        
+        header nav li {
+            display: inline-block;
+            position: relative;
+            margin: 0 0.73vw;
+            height: 29px;
+            cursor: pointer
+        }
+        
+        @media (max-width: 900px) {
+            header nav li {
+                padding: 6px 0;
+                margin: 0 0 3.5vw 0;
+                text-align: center;
+                height: auto
+            }
+        }
+        
+        @media (max-width: 736px) {
+            header nav li {
+                margin: 0 0 6vw 0
+            }
+        }
+        
+        header nav li.active>a,
+        header nav li:hover>a {
+            color: #039fd6
+        }
+        
+        header nav li a {
+            color: #fff;
+            text-decoration: none
+        }
+        
+        @media (max-width: 900px) {
+            header nav li a {
+                color: #242e37;
+                font-size: 3.4vw
+            }
+        }
+        
+        @media (max-width: 736px) {
+            header nav li a {
+                font-size: 5vw
+            }
+        }
+        
+        header .burger {
+            background: url(../img/menu-ico.png) no-repeat center/45%;
+            height: 6.4vw;
+            width: 6.4vw;
+            position: absolute;
+            right: 4.6vw;
+            display: none;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+            cursor: pointer
+        }
+        
+        @media (max-width: 900px) {
+            header .burger {
+                display: block;
+                top: 3.1vw
+            }
+        }
+        
+        @media (max-width: 736px) {
+            header .burger {
+                width: 10.4vw;
+                height: 10.4vw;
+                top: 4.2vw
+            }
+        }
+        
+        header .cross {
+            position: absolute;
+            top: 4.2vw;
+            right: 4.6vw;
+            display: none;
+            margin: 0;
+            padding: 11px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 10001;
+            width: 10.4vw;
+            max-width: 50px
+        }
+        
+        header .cross svg {
+            width: 100%;
+            height: 100%
+        }
+        
+        main {
+            height: 100%;
+            overflow: hidden
+        }
+        
+        .hero {
+            width: 100%;
+            height: 110.5vh;
+            font-weight: 800;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: -1px
+        }
+        
+        @media (max-width: 900px) {
+            .hero {
+                background: #242e37 url(../img/mob-bg3.jpg) no-repeat center/cover;
+                height: 88vh
+            }
+        }
+        
+        .hero h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50.7%, -56.6%);
+            transform: translate(-50.7%, -56.6%);
+            font-size: 13.125vw;
+            z-index: 10;
+            letter-spacing: -0.025em;
+            line-height: 0.95;
+            -webkit-transition: .3s ease-out;
+            transition: .3s ease-out;
+            color: #039fd6
+        }
+        
+        @media (max-width: 900px) {
+            .hero h2 {
+                -webkit-transform: none;
+                transform: none;
+                bottom: 15.4vw;
+                top: initial;
+                left: 4.3vw;
+                font-size: 15.42vw;
+                letter-spacing: -0.055em;
+                text-indent: 20.7vw
+            }
+        }
+        
+        @media (max-width: 736px) {
+            .hero h2 {
+                font-size: 12vw
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .hero h2 .clip {
+                color: #039fd6;
+                background: none
+            }
+        }
+        
+        .hero h2 .block {
+            display: block;
+            font-size: 4.27083vw;
+            letter-spacing: 0;
+            margin: 0 0 0 6.4vw;
+            color: #fff;
+            white-space: nowrap
+        }
+        
+        @media (max-width: 900px) {
+            .hero h2 .block {
+                font-weight: 200;
+                font-size: 6.2vw;
+                text-indent: 0;
+                margin-top: -3.3vw;
+                line-height: 1.07;
+                margin-left: 1.7vw;
+                letter-spacing: -0.04em;
+                white-space: normal;
+                padding-right: 20vw
+            }
+        }
+        
+        @media (max-width: 736px) {
+            .hero h2 .block {
+                font-size: 8.2vw;
+                padding-right: 0
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .hero h2 .first {
+                display: block;
+                font-size: 15vw;
+                letter-spacing: -0.03em
+            }
+        }
+        
+        .hero .text-scroll {
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            z-index: 2
+        }
+        
+        .hero .text-scroll .svg-bg {
+            background: #0a3a5a;
+            position: absolute;
+            height: 111vh;
+            width: 100%;
+            z-index: 8;
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            mix-blend-mode: screen
+        }
+        
+        .hero .text-scroll video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            -webkit-transition: 0.2s ease-out;
+            transition: 0.2s ease-out
+        }
+        
+        .hero .text-scroll svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            -webkit-transition: .2s ease-out;
+            transition: .2s ease-out
+        }
+        
+        .hero .text-scroll svg text {
+            font-size: 38.125vw;
+            letter-spacing: -0.025em
+        }
+        
+        .hero .text-scroll svg rect {
+            fill: #ffffff
+        }
+        
+        .hero .text-scroll svg .rect-bg {
+            fill: #222E36;
+            fill-opacity: 0.8
+        }
+        
+        .hero .text-scroll svg>rect {
+            -webkit-mask: url(#mask);
+            mask: url(#mask)
+        }
+        
+        .hero .text-scroll #b-rect {
+            fill: #0d1a25
+        }
+        /*# sourceMappingURL=main.css.map */
+    </style>
+ <!--
+    <style>
+    /*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * roboto:
+ *   - http://typekit.com/eulas/00000000000000003b9ad05b
+ * sofia-pro:
+ *   - http://typekit.com/eulas/0000000000000000000157a7
+ *   - http://typekit.com/eulas/0000000000000000000157a9
+ *   - http://typekit.com/eulas/0000000000000000000157ab
+ *   - http://typekit.com/eulas/0000000000000000000157ad
+ *   - http://typekit.com/eulas/0000000000000000000157b1
+ *
+ * © 2009-2018 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2018-03-22 09:16:53 UTC"}*/
+
+@import url("../p.typekit.net/p68ba.css?s=1&k=vqb6igb&ht=tk&f=15510.24537.24539.24541.24543.24547&a=7962710&app=typekit&e=css");
+
+@font-face {
+font-family:"roboto";
+src:url("af/acc12d/00000000000000003b9ad05b/27/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("af/acc12d/00000000000000003b9ad05b/27/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("af/acc12d/00000000000000003b9ad05b/27/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"sofia-pro";
+src:url("af/2d47de/0000000000000000000157a7/27/lc150?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("af/2d47de/0000000000000000000157a7/27/dc150?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("af/2d47de/0000000000000000000157a7/27/ac150?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+font-style:normal;font-weight:900;
+}
+
+@font-face {
+font-family:"sofia-pro";
+src:url("af/c5ee9a/0000000000000000000157a9/27/l652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("af/c5ee9a/0000000000000000000157a9/27/d652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("af/c5ee9a/0000000000000000000157a9/27/a652f?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"sofia-pro";
+src:url("af/70e5d3/0000000000000000000157ab/27/l49af?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("af/70e5d3/0000000000000000000157ab/27/d49af?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("af/70e5d3/0000000000000000000157ab/27/a49af?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+font-style:normal;font-weight:200;
+}
+
+@font-face {
+font-family:"sofia-pro";
+src:url("af/07553a/0000000000000000000157ad/27/l3eab?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("af/07553a/0000000000000000000157ad/27/d3eab?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("af/07553a/0000000000000000000157ad/27/a3eab?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+font-style:normal;font-weight:300;
+}
+
+@font-face {
+font-family:"sofia-pro";
+src:url("af/c07bfb/0000000000000000000157b1/27/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("af/c07bfb/0000000000000000000157b1/27/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("af/c07bfb/0000000000000000000157b1/27/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-style:normal;font-weight:400;
+}
+</style>
+
+
+-->
+</head>
+
+<body>
+    <header>
+
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+<!-- 
+        <h1><a href="#top" class="backTop">Flutterlytics</a></h1>
+        <nav>
+            <ul class="navigation">
+                <li class="nav-item active"><a href="#top" class="trn anchor">Home</a></li>
+                <li class="nav-item"><a href="#about" class="trn anchor">About</a></li>
+                <li class="nav-item"><a href="#services" class="trn anchor">Services</a></li>
+            </ul>
+        </nav>
+         -->
+        <div class="burger" id="hamb-icon"></div>
+        <button class="cross">
+				<svg width="24px" height="24px" viewBox="0 0 42 29" id="cross-icon">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g stroke="#000000" id="icon-color" stroke-width="3">
+							<line x1="3" y1="0" x2="32" y2="29"></line>
+							<line x1="3" y1="29" x2="32" y2="0"></line>
+						</g>
+					</g>
+				</svg>
+			</button>
+    </header>
+
+    <main>
+        <section id="top" class="hero">
+            <h2><span class="clip">digital <span class="block"><span class="first">Marketing</span> and Consulting Solutions</span>
+            </h2>
+            <div class="text-scroll m-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg">
+			            <defs>
+			                <mask id="mask" x="0" y="0" width="100%" height="110%">
+			                    <rect x="0" y="0" width="100%" height="110%" />
+			                    <text id="svg-txt" x="-117.5%" y="83%">Marketing</text>
+			                </mask>
+			            </defs>
+			            <rect x="0" y="0" width="100%" height="110%" class="rect-bg"/>
+			            <rect x="50%" y="93.2%" width="50%" height="200" id="b-rect"/>
+			        </svg>
+                <div class="svg-bg"></div>
+                <video id="h-vid" muted loop src="vid/vid3.mp4" autoplay></video>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="f-center">
+                <p style="text-align:center;color:black">&copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> Flutterlytics</p>
+            </div>
+
+        </footer>
+        <div style="height:500px;"></div>
+
+    </main>
+
+
+    <script src="js/min/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/min/xixi.js?v=0002"></script> -->
+    <script>
+        $(window).on("load scroll", do_scroll_things);
+        
+
+
+        function do_scroll_things(e) {
+            var t = $("#svg-txt"),
+                o = $(this).scrollTop(),
+                i = -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome"); - 1 < navigator.userAgent.indexOf("Firefox") ? t.attr("transform", "translate(" + o + ")") : i ? t.attr("transform", "translate(" + o + ")") : t.css("transform", "translate3d(" + o + "px, 0, 0)"), isMobile || $(".hero h2 .block").css("transform", "translate3d(" + .1 * o + "px, 0, 0)"), check_video_position(), 100 <= o ? $("header").addClass("white-bg") : $("header").removeClass("white-bg");
+            var n = o + topMenuHeight,
+                a = scrollItems.map(function() {
+                    if ($(this).offset().top < n) return this
+                }),
+                s = (a = a[a.length - 1]) && a.length ? a[0].id : "";
+            moving || lastId === s || (lastId = s, menuItems.parent().removeClass("active"), menuItems.filter("[href='#" + s + "']").parent().addClass("active")), $("section").each(function() {
+                $(this).hasClass("events") ? o > $(this).offset().top - .1 * $(window).height() && ($(this).addClass("active"), 1 == $(".events .cols-inner").css("opacity") && $(".events .cols").addClass("active")) : $(this).hasClass("about") ? o > $(this).offset().top - .6 * $(window).height() && $(this).addClass("active") : o > $(this).offset().top - .3 * $(window).height() && $(this).addClass("active")
+            }), $(".events").hasClass("active") && $("#animation-e-bg1")[0].beginElement();
+            var r = $("main").data("sliderPos", r);
+            o < r / 2 && $("main").css("height", $("main").data("sliderPos")), 768 < $(window).width() && $(".s-prlx").css("transform", "translate3d(0," + o / -4 + "px, 0)")
+        }
+    </script>
+
+    
+<script>
+    
+    
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+</body>
+
+
+</html>
