@@ -4,4 +4,4 @@
 
 ![linus](https://shiftgamingsystems.github.io/flutt/img/linus.gif)
 
-** shiftgamingsystems.github.io/flutt/img/linus.gif **
+**shiftgamingsystems.github.io/flutt/img/linus.gif**
